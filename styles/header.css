@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header-name {
+    margin-left: 2rem;
+}
+
+.nav {
+    margin-right: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    column-gap: 1rem;
+}

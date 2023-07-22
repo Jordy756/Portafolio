@@ -1,0 +1,16 @@
+body {
+    background-color: #212121;
+    color: #ffffe9;
+    padding: 0rem 1rem;
+    font-family: sans-serif;
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+}
+
+.skills-icon,
+.hobbies-icon {
+    fill: green;
+}

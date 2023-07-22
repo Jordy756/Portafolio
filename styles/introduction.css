@@ -1,0 +1,18 @@
+.introduction {
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: row-reverse;
+}
+
+.introduction-container-image {
+    display: flex;
+}
+
+.introduction-image {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+}
