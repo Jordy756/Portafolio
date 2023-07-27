@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="./styles/about-me.css" />
         <link rel="stylesheet" href="./styles/skills.css" />
         <link rel="stylesheet" href="./styles/hobbies.css" />
+        <link rel="stylesheet" href="./styles/concat.css" />
+        <link rel="stylesheet" href="./styles/projects.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/splide.min.css" />
     </head>
     <body>
         <header class="header">
@@ -19,8 +23,8 @@
                     <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mi</a></li>
                     <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
                     <li class="menu-item"><a class="menu-link" href="#hobbies">Hobbies</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#training">Formación</a></li>
                     <li class="menu-item"><a class="menu-link" href="#projects">Proyectos</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#concat">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,24 +33,18 @@
                 <picture class="introduction-container-image">
                     <img class="introduction-image" src="./images/Guts.jpg" alt="Imgen de Yordi Castro Rojas" />
                 </picture>
-                <div>
+                <article class="introduction-information">
                     <h1 class="introduction-presentation">Hola, mi nombre es Yordi Castro Rojas y construyo paginas web</h1>
                     <p class="introduction-description">
-                        Soy formada en la Universidad de Costa Rica y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.
+                        Soy formado en la Universidad de Costa Rica y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.
                     </p>
-                </div>
+                </article>
             </section>
             <section id="about-me" class="about-me">
                 <h2 class="about-me-title">Sobre mi</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut
-                    lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut
-                    lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis
-                    venenatis, egestas metus vitae, aliquet metus.
-                </p>
+                <article class="about-me-description">
+                    <p>Actualmente estudio en la Universidad de Costa Rica y estoy llevando la carrera de Bachillerato en Informática Empresarial.</p>
+                </article>
             </section>
             <section id="skills" class="skills">
                 <h2 class="skills-title">Skills</h2>
@@ -79,6 +77,10 @@
                             ></path>
                         </svg>
                         <span class="skills-name">Java</span>
+                        <p class="skills-description">
+                            He adquirido experiencia en el desarrollo tanto de juegos como de aplicaciones de escritorio, empleando las librerías de
+                            Graphics y Java Swing.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +89,11 @@
                             ></path>
                         </svg>
                         <span class="skills-name">JavaScript</span>
+                        <p class="skills-description">
+                            Tengo experiencia en el desarrollo de interacciones dinámicas en la web, que incluyen validaciones de formularios,
+                            animaciones, efectos visuales y manipulación del DOM. Además, he trabajado extensamente con AJAX para establecer
+                            comunicación con servidores mediante PHP.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -95,6 +102,10 @@
                             ></path>
                         </svg>
                         <span class="skills-name">HTML</span>
+                        <p class="skills-description">
+                            Puedo desarrollar páginas web que sean accesibles, semánticas y compatibles con diferentes navegadores. Adicionalmente,
+                            puedo integrar de manera efectiva elementos multimedia y formularios para mejorar la interacción con los usuarios.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -103,11 +114,16 @@
                             ></path>
                         </svg>
                         <span class="skills-name">CSS</span>
+                        <p class="skills-description">
+                            Aplico estilos y diseños atractivos a las páginas web creadas con HTML. Puedo gestionar la presentación visual de un sitio
+                            web, asegurándome de que sea estéticamente agradable y responda a diferentes dispositivos y tamaños de pantalla. También
+                            estoy familiarizado con técnicas de diseño responsivo para brindar una experiencia óptima en dispositivos móviles.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg
                             fill="none"
-                            stroke="green"
+                            stroke="#21BF54"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2.0"
@@ -123,6 +139,12 @@
                             <path d="m5.5 15 .395-1.974L6.5 10"></path>
                         </svg>
                         <span class="skills-name">PHP</span>
+                        <p class="skills-description">
+                            Mis habilidades en PHP me permiten desarrollar aplicaciones web del lado del servidor de manera eficiente y segura. Puedo
+                            trabajar con la arquitectura Modelo-Vista-Controlador (MVC) para crear aplicaciones estructuradas y escalables. Además,
+                            tengo experiencia en la integración de PHP con bases de datos y el manejo de formularios, lo que me permite crear
+                            aplicaciones web dinámicas y personalizadas.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -135,6 +157,10 @@
                             ></path>
                         </svg>
                         <span class="skills-name">SQLSERVER</span>
+                        <p class="skills-description">
+                            Tengo experiencia en el uso de Microsoft SQL Server. Puedo diseñar, implementar y administrar bases de datos utilizando
+                            SQL Server. Asimismo, puedo optimizar consultas y asegurar la integridad y seguridad de los datos almacenados.
+                        </p>
                     </div>
                     <div class="skills-card">
                         <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -147,6 +173,10 @@
                             ></path>
                         </svg>
                         <span class="skills-name">MySQL</span>
+                        <p class="skills-description">
+                            Tengo experiencia en el uso de MySQL. Puedo diseñar, implementar y administrar bases de datos utilizando MySQL. Asimismo,
+                            puedo optimizar consultas y asegurar la integridad y seguridad de los datos almacenados.
+                        </p>
                     </div>
                 </section>
             </section>
@@ -156,7 +186,7 @@
                     <div class="hobbies-card">
                         <svg
                             fill="none"
-                            stroke="green"
+                            stroke="#21BF54"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2.0"
@@ -174,7 +204,7 @@
                     <div class="hobbies-card">
                         <svg
                             fill="none"
-                            stroke="green"
+                            stroke="#21BF54"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2.0"
@@ -196,7 +226,7 @@
                     <div class="hobbies-card">
                         <svg
                             fill="none"
-                            stroke="green"
+                            stroke="#21BF54"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2.0"
@@ -246,45 +276,79 @@
                     </div>
                 </section>
             </section>
-            <section id="training" class="training">
-                <h2>Formación académica</h2>
-                <p>Actualmente estudio en la Universidad de Costa Rica y estoy llevando la carrera de Bachillerato en Informática Empresarial</p>
+            <section id="projects" class="projects">
+                <h2 class="projects-title">Proyectos</h2>
+                <section class="projects-section">
+                    <section class="splide" aria-labelledby="carousel-heading">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <picture class="project-image-container">
+                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador1.png" alt="" />
+                                    </picture>
+                                </li>
+                                <li class="splide__slide">
+                                    <picture class="project-image-container">
+                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador2.png" alt="" />
+                                    </picture>
+                                </li>
+                                <li class="splide__slide">
+                                    <picture class="project-image-container">
+                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador3.png" alt="" />
+                                    </picture>
+                                </li>
+                                <li class="splide__slide">
+                                    <picture class="project-image-container">
+                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador4.png" alt="" />
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <article class="projects-information">
+                        <h2 class="project-title">Encriptador de texto</h2>
+                        <span>Challenge Oracle</span>
+                        <div class="projects-buttons">
+                            <a class="button button-link" target="_blank" href="https://github.com/Jordy756/ChallengeEnriptadorAlura">Repositorio</a>
+                            <a class="button button-link" target="_blank" href="https://jordy756.github.io/ChallengeEnriptadorAlura/">Ver demo</a>
+                        </div>
+                    </article>
+                </section>
             </section>
-            <section>
-                <h2>Proyectos</h2>
-            </section>
-            <section id="concat" class="concat">
-                <h2 class="concat-title">Contacto</h2>
+            <aside id="concat" class="concat">
                 <picture class="concat-container-image">
-                    <img class="concat-image" src="" alt="Imagen de contacto" />
+                    <img class="concat-image" src="./images/Contactame.png" alt="Imagen contacto" />
                 </picture>
-                <aside>
+                <div class="concat-container-information">
+                    <h2 class="concat-title">Contacto</h2>
+                    <p class="concat-description">¿Quieres contactarme?</p>
+                    <p class="concat-description">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                     <form class="concat-form" action="" method="">
-                        <div>
-                            <input type="text" name="name" />
-                            <label for="name">Nombre</label>
+                        <div class="input-box">
+                            <input id="name" class="input" type="text" name="name" placeholder="Nombre" required />
+                            <label class="label" for="name">Nombre</label>
+                            <span class="input-error"></span>
                         </div>
-                        <div>
-                            <input type="email" name="email" />
-                            <label for="email">Email</label>
+                        <div class="input-box">
+                            <input name="email" id="email" class="input" type="email" placeholder="Correo" required />
+                            <label class="label" for="email">Correo</label>
+                            <span class="input-error"></span>
                         </div>
-                        <div>
-                            <input type="text" />
-                            <label for="">Asunto</label>
+                        <div class="input-box">
+                            <textarea id="message" class="textarea" name="message" rows="10" placeholder="Mensaje" required></textarea>
+                            <label class="label" for="message">Mensaje</label>
+                            <span class="input-error"></span>
                         </div>
-                        <div>
-                            <textarea name="message" cols="30" rows="10"></textarea>
-                            <label for="message">Mensaje</label>
-                        </div>
+                        <button type="submit" class="button">Enviar</button>
                     </form>
-                </aside>
-            </section>
+                </div>
+            </aside>
         </main>
         <footer class="footer">
-            <section></section>
-            <section></section>
-            <section></section>
-            <section>&copy; Yordi Steven Castro Rojas</section>
+            <span>&copy; Yordi Steven Castro Rojas</span>
         </footer>
+        <script src="./js/splide.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/validations.js"></script>
     </body>
 </html>

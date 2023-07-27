@@ -1,8 +1,33 @@
+:root {
+    --green-color: #21bf54;
+    --blue-color: #1763ff;
+    --background-color: #091718;
+    --white-color: #f5f4f9;
+    --font: "Ethnocentric";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Ethnocentric";
+    src: url("../fonts/ethnocentric\ rg.ttf") format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #212121;
-    color: #ffffe9;
-    padding: 0rem 1rem;
-    font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-family: var(--font), sans-serif;
+}
+
+.main {
+    padding: 0rem 2rem;
 }
 
 svg {
@@ -12,5 +37,24 @@ svg {
 
 .skills-icon,
 .hobbies-icon {
-    fill: green;
+    fill: var(--green-color);
+}
+
+.button {
+    width: 50%;
+    align-self: baseline;
+    font-size: 1.5rem;
+    position: relative;
+    border: 0.1rem ridge var(--blue-color);
+    font-family: var(--font);
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    background-color: transparent;
+    padding: 1rem;
+    transition: 1s;
+    border-radius: 0.4rem;
+}
+
+.button:hover {
+    box-shadow: inset 0 0 4rem var(--blue-color);
 }

@@ -2,9 +2,20 @@
     margin: 1rem 0rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-evenly;
+    gap: 2rem;
     flex-direction: row-reverse;
+}
+
+.introduction-presentation {
+    font-size: 2.1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.introduction-description {
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
 .introduction-container-image {

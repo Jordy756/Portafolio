@@ -1,16 +1,43 @@
+.skills {
+    margin-bottom: 2rem;
+}
+
+.skills-title {
+    margin-bottom: 1rem;
+}
+
 .skills-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .skills-card {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem var(--green-color);
 }
+
+.skills-description {
+    padding: 0rem 0.5rem;
+    display: none;
+    font-family: sans-serif;
+}
+
+.skills-card:hover .skills-name,
+.skills-card:hover svg {
+    display: none;
+}
+
+.skills-card:hover .skills-description {
+    display: block;
+}
+

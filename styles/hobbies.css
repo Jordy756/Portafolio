@@ -1,9 +1,17 @@
+.hobbies {
+    margin-bottom: 2rem;
+}
+
+.hobbies-title {
+    margin-bottom: 1rem;
+}
+
 .hobbies-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .hobbies-card {
@@ -11,6 +19,9 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem var(--green-color);
 }
