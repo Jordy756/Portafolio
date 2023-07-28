@@ -1,19 +1,20 @@
+@font-face {
+    font-family: "Ethnocentric";
+    src: url("../fonts/ethnocentric\ rg.ttf") format("truetype");
+}
+
 :root {
     --green-color: #21bf54;
     --blue-color: #1763ff;
     --background-color: #091718;
     --white-color: #f5f4f9;
+    --black-color: #050c0e;
     --font: "Ethnocentric";
 }
 
 * {
     padding: 0;
     margin: 0;
-}
-
-@font-face {
-    font-family: "Ethnocentric";
-    src: url("../fonts/ethnocentric\ rg.ttf") format("truetype");
 }
 
 html {
@@ -24,10 +25,15 @@ body {
     background-color: var(--background-color);
     color: var(--white-color);
     font-family: var(--font), sans-serif;
+    font-size: 1rem;
 }
 
 .main {
     padding: 0rem 2rem;
+}
+
+.section-title {
+    margin-bottom: 1rem;
 }
 
 svg {
@@ -41,7 +47,6 @@ svg {
 }
 
 .button {
-    width: 50%;
     align-self: baseline;
     font-size: 1.5rem;
     position: relative;
@@ -57,4 +62,24 @@ svg {
 
 .button:hover {
     box-shadow: inset 0 0 4rem var(--blue-color);
+}
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.1rem;
+    }
+    
+    .main {
+        padding: 0rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 0rem 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
 }

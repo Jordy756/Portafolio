@@ -1,8 +1,4 @@
 (() => {
-    new Splide(".splide").mount();
-})();
-
-(() => {
     const inputs = document.querySelectorAll(".input, .textarea");
     const typeOfErrors = ["valueMissing", "typeMismatch"];
     const errorMessages = {

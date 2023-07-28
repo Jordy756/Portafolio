@@ -8,14 +8,9 @@
 }
 
 .introduction-presentation {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     text-align: justify;
     margin-bottom: 1rem;
-}
-
-.introduction-description {
-    font-size: 1.1rem;
-    text-align: justify;
 }
 
 .introduction-container-image {
@@ -26,4 +21,26 @@
     width: 18.75rem;
     height: 18.75rem;
     border-radius: 50%;
+    flex-shrink: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .introduction-presentation {
+        font-size: 1rem;
+    }
+
+    .introduction-image {
+        width: 12.75rem;
+        height: 12.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introduction-presentation {
+        font-size: 1.2rem;
+    }
+
+    .introduction {
+        flex-direction: column;
+    }
 }

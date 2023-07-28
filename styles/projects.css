@@ -2,10 +2,6 @@
     margin-bottom: 2rem;
 }
 
-.projects-title {
-    margin-bottom: 1rem;
-}
-
 .project-title {
     margin-bottom: 0.5rem;
     color: var(--green-color);
@@ -33,8 +29,8 @@
 .project-image {
     max-width: 100%;
     max-height: 500px;
+    object-fit: contain;
     flex-shrink: 1;
-    flex-flow: 1;
 }
 
 .projects-information {
@@ -42,24 +38,37 @@
 }
 
 .projects-buttons {
+    margin-top: 1rem;
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .button-link {
     display: grid;
     place-items: center;
-    max-width: 15rem;
-    margin-top: 1rem;
-    height: 2rem;
     font-size: 1rem;
-    padding: 0.5rem 0rem;
-    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .button-link {
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .projects-section {
         flex-direction: column;
+    }
+
+    .splide,
+    .projects-information {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
     }
 }
