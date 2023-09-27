@@ -35,7 +35,10 @@
 }
 
 .projects-buttons {
-    margin: 2rem 0rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -45,9 +48,7 @@
 }
 
 @media screen and (max-width: 327px) {
-    .projects-buttons {
-        display: grid;
-        place-items: center;
-        gap: 1rem;
+    .button-link {
+        padding: 0.5rem 1rem;
     }
 }

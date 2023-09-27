@@ -23,7 +23,7 @@
     right: 2rem;
     flex-shrink: 1;
     border-radius: 0.4rem;
-    animation: floating 1s infinite;
+    animation: floating 1.3s infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
 }
