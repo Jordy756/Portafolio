@@ -8,4 +8,5 @@ menuBtn.addEventListener("click", () => {
 
 overlay.addEventListener("click", () => {
     overlay.classList.remove("overlay-active");
+    menuBtn.classList.toggle("menu-button-active");
 });
