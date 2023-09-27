@@ -17,9 +17,12 @@
     <body>
         <div class="container">
             <header class="header">
-                <a href="#" class="logo-container-image">
-                    <img class="logo-image" src="./images/squirrel.svg" alt="Logo" />
-                </a>
+                <img class="logo-image" src="./images/squirrel.svg" alt="Logo" />
+                <button id="menu-btn" class="menu-button">
+                    <span class="first-menu-line"></span>
+                    <span class="second-menu-line"></span>
+                    <span class="third-menu-line"></span>
+                </button>
                 <nav class="nav">
                     <ul class="nav-menu">
                         <li class="menu-item"><a class="menu-link" href="#projects">Proyectos</a></li>
@@ -28,18 +31,19 @@
                         <li class="menu-item"><a class="menu-link" href="#hobbies">Hobbies</a></li>
                         <li class="menu-item"><a class="menu-link" href="#concat">Contacto</a></li>
                     </ul>
-                    <div class="button-container">
-                        <button id="menu-button" class="menu-button">
-                            <svg class="menu-icon" fill="#21bf54" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 4.5H3V6h18V4.5Z"></path>
-                                <path d="M21 18H3v1.5h18V18Z"></path>
-                                <path d="M21 9H3v1.5h18V9Z"></path>
-                                <path d="M21 13.5H3V15h18v-1.5Z"></path>
-                            </svg>
-                        </button>
-                    </div>
                 </nav>
             </header>
+            <div class="overlay" id="overlay">
+                <nav class="mobile-nav">
+                    <ul class="nav-menu mobile-menu">
+                        <li class="menu-item"><a class="menu-link" href="#projects">Proyectos</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mi</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#hobbies">Hobbies</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#concat">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
             <main class="main">
                 <section class="introduction">
                     <picture class="introduction-container-image">
