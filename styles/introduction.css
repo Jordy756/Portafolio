@@ -1,16 +1,14 @@
 .introduction {
+    position: relative;
     margin: 1rem 0rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 2rem;
-    flex-direction: row-reverse;
+    min-height: 18.75rem;
 }
 
 .introduction-presentation {
+    margin-left: 2rem;
     font-size: 1.5rem;
-    text-align: justify;
-    margin-bottom: 1rem;
 }
 
 .introduction-container-image {
@@ -20,27 +18,58 @@
 .introduction-image {
     width: 18.75rem;
     height: 18.75rem;
-    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 2rem;
     flex-shrink: 1;
+    border-radius: 0.4rem;
+    animation: floating 1s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floating {
+    0% {
+        top: -0.2rem;
+    }
+
+    50% {
+        top: 0.2rem;
+    }
+
+    100% {
+        top: -0.2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .introduction-presentation {
-        font-size: 1rem;
+        margin-left: 0rem;
     }
 
     .introduction-image {
-        width: 12.75rem;
-        height: 12.75rem;
+        right: 0rem;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .introduction-presentation {
-        font-size: 1.2rem;
+@media screen and (max-width: 630px) {
+    .introduction {
+        justify-content: center;
+        text-align: center;
     }
 
-    .introduction {
-        flex-direction: column;
+    .introduction-presentation {
+        margin-top: 20rem;
+    }
+    .introduction-image {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .introduction-image {
+        max-width: 100%;
+        max-height: 100%;
     }
 }

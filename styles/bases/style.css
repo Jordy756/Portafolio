@@ -1,0 +1,55 @@
+:root {
+    --green-color: #21bf54;
+    --blue-color: #1763ff;
+    --background-color: #091718;
+    --white-color: #f5f4f9;
+    --black-color: #050c0e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    max-width: 60rem;
+    padding: 0rem 1rem;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .main {
+        padding: 0rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 0rem 1rem;
+    }
+}

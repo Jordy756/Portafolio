@@ -1,33 +1,33 @@
 .header {
-    padding: 0.5rem;
+    width: 60rem;
+    padding: 0.5rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    left: 0;
-    z-index: 9999;
-    font-size: 1rem;
-    background-color: var(--black-color);
+    animation: adjust-header normal both;
+    animation-timeline: scroll();
+    animation-range: 0rem;
+    color: var(--green-color);
+    z-index: 999;
 }
 
-.header-name {
-    margin-left: 2rem;
-    color: var(--blue-color);
-}
-
-.nav {
-    margin-right: 2rem;
+.logo-image {
+    width: 2rem;
+    height: 2rem;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     column-gap: 1rem;
+    font-size: 1.2rem;
 }
 
 .menu-link {
-    color: var(--blue-color);
+    text-decoration: none;
+    color: var(--green-color);
 }
 
 .button-container {
@@ -52,7 +52,18 @@
     height: 24px;
 }
 
+@keyframes adjust-header {
+    to {
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(3rem);
+    }
+}
+
 @media screen and (max-width: 900px) {
+    .header {
+        width: 100%;
+    }
+
     .header-name {
         margin-left: 0.5rem;
         font-size: 1.5rem;
@@ -68,7 +79,8 @@
     .nav-menu {
         display: none;
         transition: all 1s ease-in-out;
-        background-color: var(--black-color);
+        background-color: #ffffff08;
+        backdrop-filter: blur(1rem);
     }
 
     .button-container {

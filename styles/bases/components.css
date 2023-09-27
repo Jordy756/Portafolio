@@ -1,0 +1,21 @@
+.section-title {
+    width: 100%;
+    display: block;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    align-self: baseline;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: 0.125rem ridge var(--blue-color);
+    border-radius: 0.3rem;
+    background-color: transparent;
+    color: var(--white-color);
+    transition: 300ms all ease-in-out;
+}
+
+.button:hover {
+    box-shadow: inset 0 0 4rem var(--blue-color);
+}

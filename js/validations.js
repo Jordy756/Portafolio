@@ -14,20 +14,16 @@
         },
     };
 
-    inputs.forEach(input => {
-        input.addEventListener("blur", input => validate(input.target));
-    });
+    inputs.forEach(input => input.addEventListener("input", input => validate(input.target)));
 
-    function validate(input) {
+    const validate = input => {
         const span = input.parentElement.querySelector(".input-error");
         input.validity.valid ? (span.innerHTML = "") : (span.innerHTML = showMessage(input));
-    }
+    };
 
-    function showMessage(input) {
+    const showMessage = input => {
         let message = "";
-        typeOfErrors.forEach(error => {
-            if (input.validity[error]) message = errorMessages[input.id][error];
-        });
+        typeOfErrors.forEach(error => input.validity[error] && (message = errorMessages[input.id][error]));
         return message;
-    }
+    };
 })();

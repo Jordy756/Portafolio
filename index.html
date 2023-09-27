@@ -4,364 +4,204 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portafolio</title>
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/bases/style.css" />
+        <link rel="stylesheet" href="./styles/bases/components.css" />
         <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/introduction.css" />
         <link rel="stylesheet" href="./styles/about-me.css" />
-        <link rel="stylesheet" href="./styles/skills.css" />
-        <link rel="stylesheet" href="./styles/hobbies.css" />
-        <link rel="stylesheet" href="./styles/concat.css" />
         <link rel="stylesheet" href="./styles/projects.css" />
+        <link rel="stylesheet" href="./styles/bases/card.css" />
+        <link rel="stylesheet" href="./styles/concat.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
-        <link rel="stylesheet" href="./styles/splide.min.css" />
     </head>
     <body>
-        <header class="header">
-            <h1 class="header-name">Jordy</h1>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mi</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#hobbies">Hobbies</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#projects">Proyectos</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#concat">Contacto</a></li>
-                </ul>
-                <div class="button-container">
-                    <button id="menu-button" class="menu-button">
-                        <svg class="menu-icon" fill="#1763ff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 4.5H3V6h18V4.5Z"></path>
-                            <path d="M21 18H3v1.5h18V18Z"></path>
-                            <path d="M21 9H3v1.5h18V9Z"></path>
-                            <path d="M21 13.5H3V15h18v-1.5Z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="introduction">
-                <picture class="introduction-container-image">
-                    <img class="introduction-image" src="./images/Guts.jpg" alt="Imgen de Yordi Castro Rojas" />
-                </picture>
-                <article class="introduction-information">
-                    <h1 class="introduction-presentation">
-                        ¡Hola! Soy Yordi Castro, desarrollador de software apasionado por la creación de soluciones innovadoras que marcan la
-                        diferencia.
-                    </h1>
-                </article>
-            </section>
-            <section id="about-me" class="about-me">
-                <h2 class="section-title">Sobre mi</h2>
-                <article class="about-me-description">
-                    <p>
-                        Actualmente estudio en la Universidad de Costa Rica y estoy matriculado en la carrera de Bachillerato en Informática
-                        Empresarial
-                    </p>
-                </article>
-            </section>
-            <section id="skills" class="skills">
-                <h2 class="section-title">Skills</h2>
-                <section class="skills-section">
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.37 17.508c-3.09.86 1.87 2.64 5.8 1a7.178 7.178 0 0 1-1.1-.54 11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64Z"
-                            ></path>
-                            <path
-                                d="M14.7 15.83a16.28 16.28 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.249 2.249 0 0 1-.83-.49Z"
-                            ></path>
-                            <path
-                                d="M16.52 6.102s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86c-1.13-1.59-1.86-2.22 2.51-4.75Z"
-                            ></path>
-                            <path
-                                d="M18.13 19.142s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49Z"
-                            ></path>
-                            <path
-                                d="M15.37 14.26c.294-.186.601-.35.92-.49 0 0-1.51.27-3 .4a28.112 28.112 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51Z"
-                            ></path>
-                            <path
-                                d="M16.28 16.698a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59Z"
-                            ></path>
-                            <path
-                                d="M12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63Z"
-                            ></path>
-                            <path
-                                d="M16.41 21.316a29.747 29.747 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">Java</span>
-                        <p class="skills-description">
-                            He adquirido experiencia en el desarrollo tanto de juegos como de aplicaciones de escritorio, empleando las librerías de
-                            Graphics y Java Swing.
-                        </p>
+        <div class="container">
+            <header class="header">
+                <a href="#" class="logo-container-image">
+                    <img class="logo-image" src="./images/squirrel.svg" alt="Logo" >
+                </a>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="menu-item"><a class="menu-link" href="#projects">Proyectos</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mi</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#hobbies">Hobbies</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#concat">Contacto</a></li>
+                    </ul>
+                    <div class="button-container">
+                        <button id="menu-button" class="menu-button">
+                            <svg class="menu-icon" fill="#1763ff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 4.5H3V6h18V4.5Z"></path>
+                                <path d="M21 18H3v1.5h18V18Z"></path>
+                                <path d="M21 9H3v1.5h18V9Z"></path>
+                                <path d="M21 13.5H3V15h18v-1.5Z"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M3 3h18v18H3V3Zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049Zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">JavaScript</span>
-                        <p class="skills-description">
-                            Tengo experiencia en el desarrollo de interacciones dinámicas en la web, que incluyen validaciones de formularios,
-                            animaciones, efectos visuales y manipulación del DOM. Además, he trabajado extensamente con AJAX para establecer
-                            comunicación con servidores mediante PHP.
-                        </p>
-                    </div>
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.136 3.016h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15Zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.18.602-2.213-.605-.141-1.58H7.69l.247 3.123L12 17.51l4.028-1.08.558-6.111H9.402v-.001Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">HTML</span>
-                        <p class="skills-description">
-                            Puedo desarrollar páginas web que sean accesibles, semánticas y compatibles con diferentes navegadores. Adicionalmente,
-                            puedo integrar de manera efectiva elementos multimedia y formularios para mejorar la interacción con los usuarios.
-                        </p>
-                    </div>
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.192 3.14h15.615l-1.42 16.035-6.404 1.812-6.369-1.813L4.192 3.14ZM16.9 6.423 7.1 6.42l.158 1.949 7.53.002-.19 2.02H9.66l.18 1.913h4.596l-.272 2.62-2.164.598-2.197-.603-.14-1.57h-1.94l.215 2.868L12 17.482l3.995-1.137.905-9.923Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">CSS</span>
-                        <p class="skills-description">
-                            Aplico estilos y diseños atractivos a las páginas web creadas con HTML. Puedo gestionar la presentación visual de un sitio
-                            web, asegurándome de que sea estéticamente agradable y responda a diferentes dispositivos y tamaños de pantalla. También
-                            estoy familiarizado con técnicas de diseño responsivo para brindar una experiencia óptima en dispositivos móviles.
-                        </p>
-                    </div>
-                    <div class="skills-card">
-                        <svg
-                            fill="none"
-                            stroke="#21BF54"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2.0"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M12 21c5.523 0 10-4.03 10-9s-4.477-9-10-9S2 7.03 2 12s4.477 9 10 9Z"></path>
-                            <path d="M16.5 10h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1-.986.836H16"></path>
-                            <path d="m15.5 15 .395-1.974L16.5 10"></path>
-                            <path d="M11.6 10H14l-.5 3"></path>
-                            <path d="M12 7.5 11 13"></path>
-                            <path d="M6.5 10h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1-.986.836H6"></path>
-                            <path d="m5.5 15 .395-1.974L6.5 10"></path>
-                        </svg>
-                        <span class="skills-name">PHP</span>
-                        <p class="skills-description">
-                            Mis habilidades en PHP me permiten desarrollar aplicaciones web del lado del servidor de manera eficiente y segura. Puedo
-                            trabajar con la arquitectura Modelo-Vista-Controlador (MVC) para crear aplicaciones estructuradas y escalables. Además,
-                            tengo experiencia en la integración de PHP con bases de datos y el manejo de formularios, lo que me permite crear
-                            aplicaciones web dinámicas y personalizadas.
-                        </p>
-                    </div>
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 15.75v-9h-1.5v10.5h6v-1.5H18Z"></path>
-                            <path
-                                d="M13.5 6.75h-3A1.5 1.5 0 0 0 9 8.25v7.5a1.5 1.5 0 0 0 1.5 1.5h.75v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5v-1.5h-1.5v-1.5h.75a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5Zm-3 9v-7.5h3v7.5h-3Z"
-                            ></path>
-                            <path
-                                d="M6 17.25H1.5v-1.5H6v-3H3a1.5 1.5 0 0 1-1.5-1.5v-3A1.5 1.5 0 0 1 3 6.75h4.5v1.5H3v3h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">SQLSERVER</span>
-                        <p class="skills-description">
-                            Tengo experiencia en el uso de Microsoft SQL Server. Puedo diseñar, implementar y administrar bases de datos utilizando
-                            SQL Server. Asimismo, puedo optimizar consultas y asegurar la integridad y seguridad de los datos almacenados.
-                        </p>
-                    </div>
-                    <div class="skills-card">
-                        <svg class="skills-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 15.75v-9h-1.5v10.5h6v-1.5H18Z"></path>
-                            <path
-                                d="M13.5 6.75h-3A1.5 1.5 0 0 0 9 8.25v7.5a1.5 1.5 0 0 0 1.5 1.5h.75v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5v-1.5h-1.5v-1.5h.75a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5Zm-3 9v-7.5h3v7.5h-3Z"
-                            ></path>
-                            <path
-                                d="M6 17.25H1.5v-1.5H6v-3H3a1.5 1.5 0 0 1-1.5-1.5v-3A1.5 1.5 0 0 1 3 6.75h4.5v1.5H3v3h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5Z"
-                            ></path>
-                        </svg>
-                        <span class="skills-name">MySQL</span>
-                        <p class="skills-description">
-                            Tengo experiencia en el uso de MySQL. Puedo diseñar, implementar y administrar bases de datos utilizando MySQL. Asimismo,
-                            puedo optimizar consultas y asegurar la integridad y seguridad de los datos almacenados.
-                        </p>
-                    </div>
-                </section>
-            </section>
-            <section id="hobbies" class="hobbies">
-                <h2 class="section-title">Hobbies</h2>
-                <section class="hobbies-section">
-                    <div class="hobbies-card">
-                        <svg
-                            fill="none"
-                            stroke="#21BF54"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2.0"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M22 14h-8v8h8v-8Z"></path>
-                            <path d="m6.5 2 4.5 8H2l4.5-8Z"></path>
-                            <path d="M18 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
-                            <path d="m2 14 8 8"></path>
-                            <path d="m10 14-8 8"></path>
-                        </svg>
-                        <span class="hobbies-name">Jugar videojuegos</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg
-                            fill="none"
-                            stroke="#21BF54"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2.0"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M8.909 2.49C3.655 4.194.785 9.839 2.49 15.088c1.705 5.249 7.349 8.124 12.598 6.419 5.254-1.705 8.123-7.35 6.419-12.598-1.705-5.254-7.35-8.124-12.598-6.42Z"
-                            ></path>
-                            <path d="m17 10.5-5-4-5 4 2 6h6l2-6Z"></path>
-                            <path d="M17 10.5 21.5 9"></path>
-                            <path d="m18 20-3-3.5"></path>
-                            <path d="M9 16.5 6 20"></path>
-                            <path d="M7 10.5 2.5 9"></path>
-                            <path d="M12 6.5V2"></path>
-                        </svg>
-                        <span class="hobbies-name">Jugar fútbol</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg
-                            fill="none"
-                            stroke="#21BF54"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2.0"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"></path>
-                            <path d="M12 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                            <path d="M12 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                            <path d="M7.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                            <path d="M16.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                            <path d="M12 22h10"></path>
-                        </svg>
-                        <span class="hobbies-name">Ver películas</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg class="hobbies-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19.003 5.831a9.666 9.666 0 0 0-6.862-2.83h-.075a9.75 9.75 0 0 0-9.816 9.75V18a2.26 2.26 0 0 0 2.25 2.25H6A2.26 2.26 0 0 0 8.25 18v-3.75A2.26 2.26 0 0 0 6 12H3.788a8.231 8.231 0 0 1 8.278-7.5h.009a8.25 8.25 0 0 1 8.278 7.5h-2.212a2.25 2.25 0 0 0-2.25 2.25V18a2.25 2.25 0 0 0 2.25 2.25h1.5A2.26 2.26 0 0 0 21.89 18v-5.25a9.702 9.702 0 0 0-2.888-6.92Z"
-                            ></path>
-                        </svg>
-                        <span class="hobbies-name">Escuchar música</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg class="hobbies-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.4 18.6A.6.6 0 0 1 6 18h12a.6.6 0 1 1 0 1.2H6a.6.6 0 0 1-.6-.6ZM19.19 6l.028.001c.225.015.444.074.646.172.146.067.27.173.362.304.08.12.174.333.174.723v7.218a1.757 1.757 0 0 1-.172.646.91.91 0 0 1-.305.362c-.12.08-.333.174-.723.174H4.811l-.029-.001a1.758 1.758 0 0 1-.645-.172.91.91 0 0 1-.363-.305c-.08-.12-.174-.332-.174-.722V7.21l.002-.028a1.75 1.75 0 0 1 .171-.646.91.91 0 0 1 .305-.362C4.198 6.094 4.41 6 4.8 6h14.39Zm.01-1.2H4.8c-2.4 0-2.4 2.4-2.4 2.4v7.2c0 2.4 2.4 2.4 2.4 2.4h14.4c2.4 0 2.4-2.4 2.4-2.4V7.2c0-2.4-2.4-2.4-2.4-2.4Z"
-                            ></path>
-                        </svg>
-                        <span class="hobbies-name">Ver series</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg class="hobbies-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15 2c-2.71 0-5.05 1.54-6.22 3.78a7.062 7.062 0 0 0-3 3A7.014 7.014 0 0 0 2 15c0 3.87 3.13 7 7 7 2.71 0 5.05-1.54 6.22-3.78a7.062 7.062 0 0 0 3-3A7.014 7.014 0 0 0 22 9c0-3.87-3.13-7-7-7ZM9 20a5.002 5.002 0 0 1-4-8c0 3.87 3.13 7 7 7-.84.63-1.88 1-3 1Zm3-3a5.002 5.002 0 0 1-4-8c0 3.86 3.13 6.99 7 7-.84.63-1.88 1-3 1Zm4.7-3.3c-.53.19-1.1.3-1.7.3-2.76 0-5-2.24-5-5 0-.6.11-1.17.3-1.7.53-.19 1.1-.3 1.7-.3 2.76 0 5 2.24 5 5 0 .6-.11 1.17-.3 1.7ZM19 12c0-3.86-3.13-6.99-7-7a5.002 5.002 0 0 1 7 7Z"
-                            ></path>
-                        </svg>
-                        <span class="hobbies-name">Ver anime</span>
-                    </div>
-                    <div class="hobbies-card">
-                        <svg class="hobbies-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m18.364 2-4.546 4.09v10L18.364 12V2ZM7 4.727c-1.773 0-3.682.364-5 1.364v13.327a.49.49 0 0 0 .455.455c.09 0 .136-.064.227-.064 1.227-.59 3-.99 4.318-.99 1.773 0 3.682.363 5 1.363 1.227-.773 3.454-1.364 5-1.364 1.5 0 3.046.282 4.318.964.091.045.136.027.227.027a.489.489 0 0 0 .455-.454V6.09c-.546-.41-1.136-.682-1.818-.91v12.273C19.182 17.136 18.09 17 17 17c-1.546 0-3.773.59-5 1.364V6.09c-1.318-1-3.227-1.363-5-1.363Z"
-                            ></path>
-                        </svg>
-                        <span class="hobbies-name">Leer manga</span>
-                    </div>
-                </section>
-            </section>
-            <section id="projects" class="projects">
-                <h2 class="section-title">Proyectos</h2>
-                <section class="projects-section">
-                    <section class="splide" aria-labelledby="carousel-heading">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <picture class="project-image-container">
-                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador1.png" alt="" />
-                                    </picture>
-                                </li>
-                                <li class="splide__slide">
-                                    <picture class="project-image-container">
-                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador2.png" alt="" />
-                                    </picture>
-                                </li>
-                                <li class="splide__slide">
-                                    <picture class="project-image-container">
-                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador3.png" alt="" />
-                                    </picture>
-                                </li>
-                                <!-- <li class="splide__slide">
-                                    <picture class="project-image-container">
-                                        <img class="project-image" src="./images/ChallengeOneAlura/Encriptador4.png" alt="" />
-                                    </picture>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </section>
-                    <article class="projects-information">
-                        <h2 class="project-title">Encriptador de texto</h2>
-                        <span>Challenge Oracle</span>
-                        <div class="projects-buttons">
-                            <a class="button button-link" target="_blank" href="https://github.com/Jordy756/ChallengeEnriptadorAlura">Repositorio</a>
-                            <a class="button button-link" target="_blank" href="https://jordy756.github.io/ChallengeEnriptadorAlura/">Ver demo</a>
-                        </div>
+                </nav>
+            </header>
+            <main class="main">
+                <section class="introduction">
+                    <picture class="introduction-container-image">
+                        <img class="introduction-image" src="./images/IntroductionImage.png" alt="Imagen flotante" />
+                    </picture>
+                    <article class="introduction-information">
+                        <h1 class="introduction-presentation">¡Hello! I'm Yordi Castro</h1>
                     </article>
                 </section>
-            </section>
-            <aside id="concat" class="concat">
-                <picture class="concat-container-image">
-                    <img class="concat-image" src="./images/Contactame.png" alt="Imagen contacto" />
-                </picture>
-                <div class="concat-container-information">
-                    <h2 class="section-title">Contacto</h2>
-                    <p class="concat-description">¿Quieres contactarme?</p>
-                    <p class="concat-description">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-                    <form class="concat-form" action="" method="">
-                        <div class="input-box">
-                            <input id="name" class="input" type="text" name="name" placeholder="Nombre" required />
-                            <label class="label" for="name">Nombre</label>
-                            <span class="input-error"></span>
+                <section id="projects" class="projects-section">
+                    <h2 class="section-title">Proyectos</h2>
+                    <section class="project">
+                        <picture class="project-image-container">
+                            <img class="project-image" src="./images/projects/Encriptador.png" alt="Imagen encriptador" loading="lazy" />
+                        </picture>
+                        <div class="projects-information">
+                            <h2 class="project-title">Encriptador de texto</h2>
+                            <span>Challenge Oracle</span>
+                            <div class="projects-buttons">
+                                <a class="button button-link" target="_blank" href="https://github.com/Jordy756/ChallengeEnriptadorAlura"
+                                    >Repositorio</a
+                                >
+                                <a class="button button-link" target="_blank" href="https://jordy756.github.io/ChallengeEnriptadorAlura/">Ver demo</a>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <input name="email" id="email" class="input" type="email" placeholder="Correo" required />
-                            <label class="label" for="email">Correo</label>
-                            <span class="input-error"></span>
+                    </section>
+                    <section class="project">
+                        <picture class="project-image-container">
+                            <img class="project-image" src="./images/projects/AluraGeek.png" alt="Imagen AluraGeek" loading="lazy" />
+                        </picture>
+                        <div class="projects-information">
+                            <h2 class="project-title">AluraGeek</h2>
+                            <span>Challenge Oracle</span>
+                            <div class="projects-buttons">
+                                <a class="button button-link" target="_blank" href="https://github.com/Jordy756/AluraGeek">Repositorio</a>
+                                <a class="button button-link" target="_blank" href="https://alura-geek-theta-six.vercel.app/">Ver demo</a>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <textarea id="message" class="textarea" name="message" rows="10" placeholder="Mensaje" required></textarea>
-                            <label class="label" for="message">Mensaje</label>
-                            <span class="input-error"></span>
+                    </section>
+                    <section class="project">
+                        <picture class="project-image-container">
+                            <img class="project-image" src="./images/projects/AluraFlix.png" alt="Imagen AluraFlix" loading="lazy" />
+                        </picture>
+                        <div class="projects-information">
+                            <h2 class="project-title">AluraFlix</h2>
+                            <span>Challenge Oracle</span>
+                            <div class="projects-buttons">
+                                <a class="button button-link" target="_blank" href="https://github.com/Jordy756/AluraFlix">Repositorio</a>
+                                <a class="button button-link" target="_blank" href="https://alura-flix-beta.vercel.app/">Ver demo</a>
+                            </div>
                         </div>
-                        <button type="submit" class="button">Enviar</button>
-                    </form>
-                </div>
-            </aside>
-        </main>
-        <footer class="footer">
-            <span>&copy; Yordi Steven Castro Rojas</span>
-        </footer>
-        <script src="./js/splide.min.js"></script>
-        <script src="./js/index.js"></script>
+                    </section>
+                </section>
+                <section id="about-me" class="about-me">
+                    <h2 class="section-title">Sobre mi</h2>
+                    <article class="about-me-description">
+                        <p>
+                            Actualmente estudio en la Universidad de Costa Rica y estoy matriculado en la carrera de Bachillerato en Informática
+                            Empresarial
+                        </p>
+                    </article>
+                </section>
+                <section id="skills" class="card-section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="card">
+                        <img src="./images/skills/logo-java.svg" alt="Logo Java" loading="lazy" />
+                        <span class="card-name">Java</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-javascript.svg" alt="Logo JavaScript" loading="lazy" />
+                        <span class="card-name">JavaScript</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-html5.svg" alt="Logo HTML5" loading="lazy" />
+                        <span class="card-name">HTML</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-css3.svg" alt="Logo CSS3" loading="lazy" />
+                        <span class="card-name">CSS</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-php.svg" alt="Logo PHP" loading="lazy" />
+                        <span class="card-name">PHP</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-sqlserver.svg" alt="Logo SQLSERVER" loading="lazy" />
+                        <span class="card-name">SQLSERVER</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-mysql.svg" alt="Logo MySQL" loading="lazy" />
+                        <span class="card-name">MySQL</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/skills/logo-react.svg" alt="Logo MySQL" loading="lazy" />
+                        <span class="card-name">React</span>
+                    </div>
+                </section>
+                <section id="hobbies" class="card-section">
+                    <h2 class="section-title">Hobbies</h2>
+                    <div class="card">
+                        <img src="./images/hobbies/game-controller.svg" alt="Imagen control" loading="lazy" />
+                        <span class="card-name">Jugar videojuegos</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/soccer.svg" alt="Imagen fútbol" loading="lazy" />
+                        <span class="card-name">Jugar fútbol</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/movie.svg" alt="Imagen película" loading="lazy" />
+                        <span class="card-name">Ver películas</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/headphones.svg" alt="Imagen música" loading="lazy" />
+                        <span class="card-name">Escuchar música</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/tv.svg" alt="Imagen series" loading="lazy" />
+                        <span class="card-name">Ver series</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/animation.svg" alt="Imagen anime" loading="lazy" />
+                        <span class="card-name">Ver anime</span>
+                    </div>
+                    <div class="card">
+                        <img src="./images/hobbies/book.svg" alt="Imagen libro" loading="lazy" />
+                        <span class="card-name">Leer manga</span>
+                    </div>
+                </section>
+                <aside id="concat" class="concat">
+                    <picture class="concat-container-image">
+                        <img class="concat-image" src="./images/Contactame.png" alt="Imagen contacto" loading="lazy" />
+                    </picture>
+                    <div class="concat-container-information">
+                        <h2 class="section-title">Contacto</h2>
+                        <p class="concat-description">¿Quieres contactarme?</p>
+                        <p class="concat-description">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                        <form class="concat-form" action="" method="">
+                            <div class="input-box">
+                                <input id="name" class="input" type="text" name="name" placeholder="Nombre" required />
+                                <label class="label" for="name">Nombre</label>
+                                <span class="input-error"></span>
+                            </div>
+                            <div class="input-box">
+                                <input name="email" id="email" class="input" type="email" placeholder="Correo" required />
+                                <label class="label" for="email">Correo</label>
+                                <span class="input-error"></span>
+                            </div>
+                            <div class="input-box">
+                                <textarea id="message" class="textarea" name="message" rows="10" placeholder="Mensaje" required></textarea>
+                                <label class="label" for="message">Mensaje</label>
+                                <span class="input-error"></span>
+                            </div>
+                            <button type="submit" class="button button-send">Enviar</button>
+                        </form>
+                    </div>
+                </aside>
+            </main>
+            <footer class="footer">
+                <span>&copy; Yordi Steven Castro Rojas</span>
+            </footer>
+        </div>
         <script src="./js/validations.js"></script>
+        <script src="./js/showMenu.js"></script>
     </body>
 </html>
